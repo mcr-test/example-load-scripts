@@ -1,0 +1,9 @@
+config:
+  target: "https://test.k6.io"
+  phases:
+    - duration: 30
+      arrivalRate: 10
+scenarios:
+  - flow:
+      - get:
+          url: "/"
