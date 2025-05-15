@@ -15,3 +15,16 @@ brew install openjdk@11
 ## Run the test
 ```bash
 ./bin/gatling.sh
+
+
+## HTTP Reporting
+
+Gatling generates detailed HTML reports including:
+
+- Success/failure rates
+- Response time percentiles
+- Requests per second
+
+📂 Reports will be saved under: results/<test-id>/index.html
+
+

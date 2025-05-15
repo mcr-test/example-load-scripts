@@ -3,6 +3,12 @@ config:
   phases:
     - duration: 30
       arrivalRate: 10
+  ensure:
+    thresholds:
+      - http.response_time.p95 < 1000
+      - http.requests: 100
+  plugins:
+    metrics-by-endpoint: {}
 scenarios:
   - flow:
       - get:
