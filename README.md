@@ -21,7 +21,7 @@ Choose the tool that fits your requirements or compare them side by side.
 | Tool      | Language       | Run Command                          |
 |-----------|----------------|---------------------------------------|
 | K6        | JavaScript     | `k6 run script.js > report.txt`                 |
-| Gatling   | Scala (JVM)    | `./bin/gatling.sh` (from Gatling dir)|
+| Gatling   | Scala (JVM)    | `docker run --rm my-gatling` |
 | Locust    | Python         | `locust -f locustfile.py --headless -u 10 -r 2 --host=https://test.k6.io --run-time 30s` |
-| Artillery | YAML/Node.js   | `artillery report --output report.html report.json` |
+| Artillery | YAML/Node.js   | `artillery run script.yml` |
 

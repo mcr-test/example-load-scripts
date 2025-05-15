@@ -1,30 +1,15 @@
 # Gatling Load Test
 
-This example demonstrates a basic load test using [Gatling](https://gatling.io/), a powerful load testing tool based on Scala and built for high performance.
+...
 
-## 🔧 Prerequisites
+## 🚀 Running the Test
 
-### 1. Install Java JDK (8 or 11 recommended)
-Gatling requires Java. You can install the JDK using one of the following:
+### Option A: Native (Local Java Install)
+See above for Java & manual setup.
 
-#### On macOS (using Homebrew):
+### Option B: Docker (Recommended)
+
+#### 1. Build the Docker image
+From inside the `gatling/` directory:
 ```bash
-brew install openjdk@11
-
-
-## Run the test
-```bash
-./bin/gatling.sh
-
-
-## HTTP Reporting
-
-Gatling generates detailed HTML reports including:
-
-- Success/failure rates
-- Response time percentiles
-- Requests per second
-
-📂 Reports will be saved under: results/<test-id>/index.html
-
-
+docker build -t my-gatling .
